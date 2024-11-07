@@ -34,7 +34,7 @@ const playAgainBtn = document.createElement("button");
 playAgainBtn.innerHTML = "Play Again";
 playAgainBtn.classList.add("d-none");
 
-const text = document.createElement("p");
+const text = document.createElement("h2");
 text.innerHTML = "Ha vinto ";
 text.classList.add("d-none");
 text.style.color = "#ffffff";
@@ -60,6 +60,8 @@ function handleThrowDices() {
     // cambia dado in base a res$
     dice1.src = `img/dadi/${res1}.svg`;
     dice2.src = `img/dadi/${res2}.svg`;
+    dice1.classList.add("rumble");
+    dice2.classList.add("rumble");
 
     // Mostra testo vittoria
     text.classList.remove("d-none");
@@ -79,9 +81,11 @@ function handleThrowDices() {
     playAgainBtn.addEventListener("click", handlePlayAgain);
 }
 
-function handlePlayAgain(){
+function handlePlayAgain() {
     dice1.src = `img/dadi/1.svg`;
     dice2.src = `img/dadi/1.svg`;
+    dice1.classList.remove("rumble");
+    dice2.classList.remove("rumble");
 
     throwBtn.classList.remove("d-none");
 
