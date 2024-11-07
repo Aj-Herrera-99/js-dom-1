@@ -40,8 +40,7 @@ function handleToggleOnOff() {
         imgBonus.style.rotate = "y 180deg";
         // cambio testo button
         toggleOnOffBtn.innerHTML = "Spegni";
-    } 
-    else if(imgBonus.src.includes("yellow_lamp.png")) {
+    } else if (imgBonus.src.includes("yellow_lamp.png")) {
         // cambio immagine lampadina
         imgBonus.src = "img/white_lamp.png";
         imgBonus.alt = "lampadina spenta bonus";
