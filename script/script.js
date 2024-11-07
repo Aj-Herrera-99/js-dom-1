@@ -16,7 +16,7 @@ button.addEventListener("click", handleLightBulb);
 function handleLightBulb() {
     img.src = "img/yellow_lamp.png";
     img.alt = "lampadina accesa";
-    img.style.rotate = "y 180deg";
+    img.style.transform = "translate(-41px, 0)";
 }
 
 /**
@@ -37,7 +37,7 @@ function handleToggleOnOff() {
         // cambio immagine lampadina
         imgBonus.src = "img/yellow_lamp.png";
         imgBonus.alt = "lampadina accesa bonus";
-        imgBonus.style.rotate = "y 180deg";
+        imgBonus.style.transform = "translate(-41px, 0)";
         // cambio testo button
         toggleOnOffBtn.innerHTML = "Spegni";
     } else if (imgBonus.src.includes("yellow_lamp.png")) {
